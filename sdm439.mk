@@ -312,6 +312,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Speed up
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
+    SystemUI
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
