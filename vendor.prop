@@ -83,7 +83,7 @@ debug.enable.sglscale=1
 debug.gralloc.enable_fb_ubwc=1
 debug.mdpcomp.logs=0
 debug.sf.enable_hwc_vds=1
-debug.sf.hw=1
+debug.sf.hw=0
 debug.sf.recomputecrop=0
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
@@ -224,8 +224,6 @@ ro.zram.periodic_wb_delay_hours=24
 # graphics
 debug.hwui.renderer=opengl
 debug.cpurend.vsync=false
-debug.sf.enable_gl_backpressure=1
-debug.sf.disable_backpressure=1
 debug.sf.disable_client_composition_cache=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
