@@ -31,6 +31,7 @@ using android::hardware::usb::V1_0::implementation::Usb;
 int main() {
     android::sp<IUsb> service = new Usb();
 
+    android::hardware::setMinSchedulerPolicy(service, SCHED_NORMAL, -20);
     configureRpcThreadpool(1, true /*callerWillJoin*/);
     android::status_t status = service->registerAsService();
 
