@@ -258,6 +258,7 @@ debug.sf.disable_backpressure=1
 debug.sf.disable_client_composition_cache=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
+ro.surface_flinger.max_frame_buffer_acquired_buffers=1
 
 # SurfaceFlinger
 debug.sf.early_app_phase_offset_ns=500000
