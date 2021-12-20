@@ -42,6 +42,13 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "init.performance_level.rc",
+    src: "etc/init.performance_level.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
 // Configuration scripts
 
 sh_binary {
