@@ -55,6 +55,8 @@ vendor.voice.playback.conc.disabled=true
 vendor.voice.record.conc.disabled=false
 vendor.voice.voip.conc.disabled=true
 
+# shutdown
+ro.build.shutdown_timeout=2
 # Apex
 ro.apex.updatable=false
 
@@ -275,12 +277,9 @@ ro.surface_flinger.start_graphics_allocator_service=true
 ro.surface_flinger.use_context_priority=true
 
 # SurfaceFlinger
-debug.sf.early_app_phase_offset_ns=500000
-debug.sf.early_gl_app_phase_offset_ns=15000000
+debug.sf.early_phase_offset_ns=1500000
+debug.sf.early_app_phase_offset_ns=1500000
 debug.sf.early_gl_phase_offset_ns=3000000
-debug.sf.early_phase_offset_ns=500000
-debug.sf.high_fps_early_gl_phase_offset_ns=9000000
-debug.sf.high_fps_early_phase_offset_ns=6100000
-debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
+debug.sf.early_gl_app_phase_offset_ns=15000000
 ro.surface_flinger.vsync_event_phase_offset_ns=2000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
