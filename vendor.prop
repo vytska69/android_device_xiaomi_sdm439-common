@@ -235,14 +235,15 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 ro.sys.fw.bservice_limit=64
 ro.sys.fw.bservice_age=10000
 ro.sys.fw.use_trim_settings=true
-ro.sys.fw.trim_enable_memory=1073741824
 ro.am.reschedule_service=true
+ro.sys.fw.trim_enable_memory=1073741824
 ro.config.dha_cached_min=2
-ro.config.dha_cached_max=9
+ro.config.dha_cached_max=5
 ro.config.dha_empty_min=6
-ro.config.dha_empty_max=19
-ro.config.dha_empty_init=15
+ro.config.dha_empty_max=16
+ro.config.dha_empty_init=12
 ro.config.dha_lmk_scale=0.66
+ro.config.dha_th_rate=2.5
 ro.config.sdha_apps_bg_max=50
 
 #
@@ -254,7 +255,6 @@ ro.zram.first_wb_delay_mins=1440
 ro.zram.periodic_wb_delay_hours=24
 
 #go_defaults_common.mk
-ro.config.low_ram=true
 pm.dexopt.downgrade_after_inactive_days=10
 pm.dexopt.shared=quicken
 ro.lmk.critical_upgrade=true
