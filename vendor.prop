@@ -5,13 +5,12 @@ ro.dex2oat_white_list=com.google.android.gms
 ro.sys.fw.dex2oat_thread_count=8
 dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.boot-dex2oat-threads=8
-dalvik.vm.dex2oat-threads=8
-dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.dex2oat-threads=6
 dalvik.vm.dex2oat-filter=speed-profile
-dalvik.vm.dex2oat-threads=8
-dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.image-dex2oat-threads=6
 dalvik.vm.image-dex2oat-filter=speed-profile
-dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.dex2oat-minidebuginfo=false
 dalvik.vm.minidebuginfo=false
 
@@ -104,7 +103,7 @@ debug.gralloc.enable_fb_ubwc=1
 debug.mdpcomp.logs=0
 debug.sf.enable_hwc_vds=0
 debug.sf.disable_backpressure=1
-debug.sf.hw=1
+debug.sf.hw=0
 debug.sf.latch_unsignaled=0
 debug.sf.recomputecrop=0
 dev.pm.dyn_samplingrate=1
@@ -247,13 +246,9 @@ ro.lmk.downgrade_pressure=60
 ro.lmk.kill_heaviest_task=false
 ro.statsd.enable=false
 
-# graphics
-debug.hwui.renderer=skiagl
-debug.renderengine.backend=skiaglthreaded
-renderthread.skia.reduceopstasksplitting=true
+debug.hwui.renderer=opengl
 debug.cpurend.vsync=false
 debug.sf.disable_client_composition_cache=1
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # SurfaceFlinger
 debug.sf.use_phase_offsets_as_durations=1
