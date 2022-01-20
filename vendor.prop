@@ -278,6 +278,7 @@ renderthread.skia.reduceopstasksplitting=false
 debug.cpurend.vsync=false
 debug.sf.disable_client_composition_cache=1
 debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # SurfaceFlinger
 debug.sf.use_phase_offsets_as_durations=1
