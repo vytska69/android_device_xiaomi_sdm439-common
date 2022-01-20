@@ -273,6 +273,7 @@ ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=false
 
 debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
 debug.cpurend.vsync=false
 debug.sf.disable_client_composition_cache=1
 
